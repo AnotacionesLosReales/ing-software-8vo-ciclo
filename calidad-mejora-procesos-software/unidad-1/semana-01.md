@@ -1,5 +1,18 @@
 # Semana 1: Definición de la Calidad
 
+## Para qué es el curso
+
+- El costo del proceso de desarrollo sea bajo.
+- Asegurar la recolección y desarrollo de los requisitos.
+- Cuál es el proceso que sigue un requisito desde la recolección.
+
+## Conceptos
+
+- **Calidad:** Cumplir con requisitos
+- **Gestión de la Calidad:** Llevar los requisitos a la planificación, ejecución, control y mejora (PDSA).
+- **Método de Calidad:** Forma de cómo llevar a cabo el PDSA.
+- Un ejemplo de PDSA es Scrum o ISO.
+
 ## ¿Qué es la Calidad?
 
 - El conjunto de características técnicas, necesidades y expectativas forman una historia de usuario.
