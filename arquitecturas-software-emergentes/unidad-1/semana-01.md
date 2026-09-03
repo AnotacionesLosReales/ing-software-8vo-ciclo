@@ -89,3 +89,55 @@
 
 - **Componentes:** procesos, servicios activos, hilos, instancias y conexión a base de datos.
 - **Conectores:** llamadas a métodos, HTTP, sockets, JDBC, eventos, pipes y colas.
+
+### Modelo 4+1
+
+#### Vista lógica
+
+*Explica el dominio y la funcionalidad. Muestra abstracciones que soportan los requisitos del usuario.*
+
+- **Stakeholders:** Usuarios, analistas y desarrolladores.
+- **Enfoque:** Conceptos del dominio como Estudiante, Curso y Matrícula.
+- **Estructura:** Principalmente la estructura de módulo y colaboraciones lógicas.
+- **Diagramas:** Clases, objetos e interacción cuando aportan claridad.
+- **Pregunta:** ¿Qué conceptos y responsabilidades realizan la funcionalidad?
+
+#### Vista de desarrollo
+
+*Explica la organización del código.*
+
+- **Stakeholders:** Programadores y responsables de configuración.
+- **Enfoque:** Paquetes, módulos, librerías y reglas de capas.
+- **Estructura:** Estructura de módulo entre ellas, las unidades de implementación y dependencias.
+- **Diagramas:** Paquetes, módulos, capas y dependencias.
+- **Pregunta:** ¿Cómo se divide el trabajo y cómo se compila el sistema?
+
+#### Vista de procesos
+
+*Explica comportamiento y concurrencia. Hace visibles rendimiento, sincronización y manejo de fallos.*
+
+- **Stakeholders:** Arquitectos, integradores y especialistas en rendimiento.
+- **Enfoque:** Procesos, hilos, comunicación, coordinación y fallos.
+- **Estructura:** Componente y conector.
+- **Diagramas:** Secuencia, actividad y comunicación.
+- **Pregunta:** ¿Qué ocurre cuando múltiples solicitudes se ejecutan?
+
+#### Vista de despliegue
+
+*Conecta software e infraestructura. Permite operar el sistema en un entorno concreto.*
+
+- **Stakeholders:** Ingenieros de sistemas, redes y operaciones.
+- **Enfoque:** Distribución de artefactos, procesos, datos y enlaces.
+- **Estructura:** Asignación entre software y nodos.
+- **Diagramas:** Despliegue UML y topologías de infraestructura.
+- **Pregunta:** ¿Dónde se ejecuta y qué ocurre si un nodo falla?
+
+#### Vista de casos de uso o de escenarios
+
+*La vista de escenarios valida la coherencia del conjunto. El +1 demuestra que las otras vistas colaboran para cumplir casos reales.*
+
+- **Escenario:** el alumno intenta matricularse en un curso sin vacantes.
+- **Vista lógica:** reglas de Curso, Matrícula y disponibilidad.
+- **Vista de desarrollo:** módulos y paquetes responsables.
+- **Vista de procesos:** secuencia, concurrencia y control de cupos.
+- **Vista de despliegue:** nodos, base de datos y rutas de comunicación.
